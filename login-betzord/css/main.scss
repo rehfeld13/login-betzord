@@ -1,0 +1,143 @@
+@import 'reset.scss';
+
+.container {
+  display: flex;
+
+
+  .video {
+    .vid {
+      video {
+        width: 420px;
+      }
+    }
+  }
+
+  .box {
+
+    margin: 100px auto;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 200px;
+        margin-bottom: 30px;
+      }
+
+      input {
+        width: 52%;
+        height: 65px;
+        padding: 20px;
+        border-radius: 10px;
+        outline: none;
+        font-size: 18px;
+        margin-bottom: 20px;
+
+        &:hover {
+          background: rgb(236, 236, 236);
+        }
+      }
+
+      .buttons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        .button1 {
+          width: 25%;
+          padding: 20px;
+          margin-right: 20px;
+          font-size: 20px;
+          font-weight: bold;
+          background-color: rgb(35, 34, 34);
+          border: 1px solid rgb(0, 174, 255);
+          border-radius: 10px;
+          color: rgb(133, 216, 254);
+          cursor: pointer;
+  
+          &:hover {
+            background-color: rgb(0, 213, 255);
+            color: white;
+            transition: 500ms;
+          }
+        }
+  
+        .button2 {
+          width: 25%;
+          padding: 20px;
+          font-size: 20px;
+          font-weight: bold;
+          background-color: rgb(0, 213, 255);
+          border: none;
+          border-radius: 10px;
+          color: white;
+          cursor: pointer;
+        }
+      }
+
+      
+
+      .caixa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        background: rgb(25,24,24);
+        background: linear-gradient(0deg, rgba(25,24,24,1) 7%, rgba(22,21,21,1) 33%, rgba(50,48,52,1) 83%);
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow:0px 0px 20px black;
+        
+
+        img {
+          width: 30px;
+          margin: 40px 20px;
+          transform: rotate(250deg);
+
+        }
+
+        span a{
+          color: white;
+          font-size: 23 px;
+          text-decoration: none;
+
+          &:hover{
+            color: rgb(171, 220, 230);
+            transition: 500ms;
+          }
+        }
+
+        p{
+          color: white;
+          font-size: 23px;
+          
+        }
+
+        .text-blue {
+          color: rgb(0, 213, 255);
+        }
+      }
+
+      .copyright{
+        color: white;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width:880px){
+.container{
+  display: flex;
+  flex-direction: column;
+
+  .video{
+    display: none;
+  }
+}
+
+
+}

@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(35, 34, 34);
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  outline: none;
+}
+
+.container {
+  display: flex;
+}
+.container .video .vid video {
+  width: 420px;
+}
+.container .box {
+  margin: 100px auto;
+}
+.container .box .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .box .content img {
+  width: 200px;
+  margin-bottom: 30px;
+}
+.container .box .content input {
+  width: 52%;
+  height: 65px;
+  padding: 20px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.container .box .content input:hover {
+  background: rgb(236, 236, 236);
+}
+.container .box .content .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.container .box .content .buttons .button1 {
+  width: 25%;
+  padding: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(35, 34, 34);
+  border: 1px solid rgb(0, 174, 255);
+  border-radius: 10px;
+  color: rgb(133, 216, 254);
+  cursor: pointer;
+}
+.container .box .content .buttons .button1:hover {
+  background-color: rgb(0, 213, 255);
+  color: white;
+  transition: 500ms;
+}
+.container .box .content .buttons .button2 {
+  width: 25%;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(0, 213, 255);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.container .box .content .caixa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background: rgb(25, 24, 24);
+  background: linear-gradient(0deg, rgb(25, 24, 24) 7%, rgb(22, 21, 21) 33%, rgb(50, 48, 52) 83%);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px black;
+}
+.container .box .content .caixa img {
+  width: 30px;
+  margin: 40px 20px;
+  transform: rotate(250deg);
+}
+.container .box .content .caixa span a {
+  color: white;
+  font-size: 23 px;
+  text-decoration: none;
+}
+.container .box .content .caixa span a:hover {
+  color: rgb(171, 220, 230);
+  transition: 500ms;
+}
+.container .box .content .caixa p {
+  color: white;
+  font-size: 23px;
+}
+.container .box .content .caixa .text-blue {
+  color: rgb(0, 213, 255);
+}
+.container .box .content .copyright {
+  color: white;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 880px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .video {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
